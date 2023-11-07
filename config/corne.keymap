@@ -81,7 +81,7 @@
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0    &bt BT_SEL 1     &bt BT_SEL 2          &bt BT_SEL 3           &bt BT_SEL 4    &kp CARET       &kp AMPS        &kp ASTRK      &kp DOLLAR        &kp PERCENT   &trans
 &kp PLUS    &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp EQUAL       &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW   &kp RIGHT_ARROW   &kp QUESTION  &kp EXCLAMATION
-&kp MINUS   &kp GRAVE       &kp PIPE         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AT_SIGN     &kp TILDE       &kp MINUS       &kp LESS_THAN  &kp GREATER_THAN  &trans        &kp BACKSLASH
+&kp MINUS   &kp GRAVE       &kp PIPE         &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp AT_SIGN     &kp TILDE       &kp POUND       &kp LESS_THAN  &kp GREATER_THAN  &trans        &kp BACKSLASH
                                              &trans                &trans                 &trans          &trans          &trans          &trans
             >;
         };
