@@ -26,6 +26,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        CapsLock {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <38 39>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
