@@ -24,6 +24,15 @@
             tapping-term-ms = <190>;
             flavor = "tap-preferred";
         };
+
+        Return_tap: Return_tap {
+            compatible = "zmk,behavior-hold-tap";
+            label = "RETURN_TAP";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+        };
     };
 
     combos {
@@ -47,10 +56,10 @@
 
             label = "Base";
             bindings = <
-&trans     &kp Q  &kp W  &kp E                &kp R         &kp T              &kp Y                         &kp U      &kp I                     &kp O    &kp P     &kp BACKSPACE
-&kp LCTRL  &kp A  &kp S  &kp D                &kp F         &kp G              &kp H                         &kp J      &kp K                     &kp L    &kp SEMI  &kp SQT
-&trans     &kp Z  &kp X  &kp C                &kp V         &kp B              &kp N                         &kp M      &kp COMMA                 &kp DOT  &kp FSLH  &trans
-                         &mt LEFT_GUI ESCAPE  &lt 1 ESCAPE  &mt LSHFT ENTER    &space_tap RIGHT_SHIFT SPACE  &lt 2 TAB  &mt RIGHT_ALT UNDERSCORE
+&trans     &kp Q  &kp W  &kp E                &kp R         &kp T                           &kp Y                         &kp U      &kp I                     &kp O    &kp P     &kp BACKSPACE
+&kp LCTRL  &kp A  &kp S  &kp D                &kp F         &kp G                           &kp H                         &kp J      &kp K                     &kp L    &kp SEMI  &kp SQT
+&trans     &kp Z  &kp X  &kp C                &kp V         &kp B                           &kp N                         &kp M      &kp COMMA                 &kp DOT  &kp FSLH  &trans
+                         &mt LEFT_GUI ESCAPE  &lt 1 ESCAPE  &Return_tap LEFT_SHIFT ENTER    &space_tap RIGHT_SHIFT SPACE  &lt 2 TAB  &mt RIGHT_ALT UNDERSCORE
             >;
         };
 
